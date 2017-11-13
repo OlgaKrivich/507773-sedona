@@ -8,7 +8,7 @@
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
-					<img src="img/index-logo.jpg" width="141" height="70" alt="Логотип седоны">
+					<img src="img/index-logo.png" width="141" height="70" alt="Логотип седоны">
 				</a>
 				<ul class="site-navigation">
 					<li><a href="info.html">Информация</a></li>
@@ -83,12 +83,39 @@
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			<b>Поиск гостиниц в Седоне</b>
 			<!--Здесь будет форма -->
-			<span class="button">Найти</span>
+			<form class="search" action="https://echo.htmlacademy.ru" method="post">
+				<p class="search-date-item">
+					<label for="arrival-date">Дата заезда</label>
+					<input id="arrival-date" type="date" name="date" placeholder="24 апреля 2017">
+				</p>
+				<p class="search-date-item">
+					<label for="departure-date">Дата выезда</label>
+					<input id="departure-date" type="date" name="date" placeholder="4 июля 2017">
+				</p>
+				<p class="search-number-item">
+					<label for="adults">Взрослые</label>
+					<button>-</button>
+					<input id="adults" type="number" name="number" step="1" placeholder="2">
+					<button>+</button>
+				</p>
+				<p class="search-number-item">
+					<label for="children">Дети</label>
+					<button>-</button>
+					<input id="children" type="number" name="number" step="1" placeholder="0">
+					<button>+</button>
+				</p>
+				<button class="button" type="submit">Найти</button>
+			</form>
+			<button class="search-close" type="button">Закрыть</button>
 		</section>
 
 
 		<section class="map">
 			<h2 class="visually-hidden">Как добраться до нас</h2>
+			<p>
+   			<img src="img/map.jpg" width="1200" height="475" alt="Седона">
+   		</p>
+   		<button class="map-close" type="button">Закрыть</button>	
 		</section>
 
 		<footer class="main-footer">

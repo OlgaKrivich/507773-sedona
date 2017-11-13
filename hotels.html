@@ -9,7 +9,7 @@
 	<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
-					<img src="img/index-logo.jpg" width="141" height="70" alt="Логотип седоны">
+					<img src="img/index-logo.png" width="141" height="70" alt="Логотип седоны">
 				</a>
 				<ul class="site-navigation">
 					<li><a href="info.html">Информация</a></li>
@@ -22,11 +22,48 @@
 
 		<section class="criterias">
 			<h2 class="visually-hidden">Выбери критерии</h2>
-			<span class="infostructure"> Инфраструктура:</span>
-			<span class="accomodation">Тип жилья:</span>
-			<!--Здесь будет форма-->
-			<form></form>
-			<span class="button">Показать</span>
+			
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+				<fieldset>
+					<legend>Инфраструктура</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+							<label for="filter-pool">Бассейн</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-parking">
+							<label for="filter-parking">Парковка</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-wifi">
+							<label for="filter-wifi">Wi-Fi</label>
+						</li>
+					</ul>
+					
+				</fieldset>
+				<fieldset>
+					<legend>Тип жилья</legend>
+					<ul>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+							<label for="filter-hotel">гостиница</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+							<label for="filter-motel">Мотель</label>
+						</li>
+						<li class="filter-option">
+							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
+							<label for="filter-apartment">Апартаменты</label>
+						</li>
+					</ul>
+				</fieldset>
+				<!--Ползунок-->
+				<p class="fiter-price">Стоимость в кутки</p>
+				<button class="filter-button" type="submit">Показать</button>
+			</form>
+			
 		</section>
 
 		<section class="hotels">
