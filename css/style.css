@@ -34,10 +34,12 @@ a{
 }
 
 .main-page{
-	background-color: #90a8c2;
-	background-image: url("img/bgover1.png"),url("img/background1.jpg");
-	background-position: 
-	background-repeat: no-repeat;
+
+	background-color: #2b576b;
+	background-image: url("../img/bgover1.png"), url("../img/background1.jpg");
+	background-position: bottom, 0 -56px;
+	background-repeat: no-repeat, no-repeat;
+	height: 508px;
 }
 
 .main-page h1{
@@ -100,17 +102,17 @@ a{
 
 .reason-item-accomodation::before{
 	content: "";
-	background-image: url("img/svg/icon-1.svg");
+	background-image: url("../img/svg/icon-1.svg");
 }
 
 .reason-item-food::before{
 	content: "";
-	background-image: url("img/svg/icon-3.svg");
+	background-image: url("../img/svg/icon-3.svg");
 }
 
 .reason-item-souvenir::before{
 	content: "";
-	background-image: url("img/svg/icon-2.svg");
+	background-image: url("../img/svg/icon-2.svg");
 }
 
 .search-title{
@@ -132,6 +134,7 @@ a{
 	text-transform: uppercase;
 	border: 0;
 	border-radius: 0;
+	background-color: #f2f2f2;
 }
 
 .hotel-search{
@@ -144,7 +147,7 @@ a{
 
 .hotel-search:active,
 .hetel-search:focus{
-	background-color: #503e33;#
+	background-color: #503e33;
 	color: #81746d;
 }
 
@@ -171,17 +174,7 @@ a{
 }
 
 .search-date-calendar{
-	background-image: url("svg/calendar.svg");
-	color: #cacaca;
-}
-
-.search-date-calendar:hover{
-	background-color: #000000;
-}
-
-.search-date-calendar:active,
-.search-date-calendar:focus{
-	background-color: #81b3d2;
+	background-image: url("..img/svg/calendar.svg");
 }
 
 .search-button{
@@ -196,5 +189,7 @@ a{
 .search-button:focus{
 	background-color: #5496bd;
 }
+
+
 
 
