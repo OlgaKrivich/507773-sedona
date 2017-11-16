@@ -192,6 +192,19 @@ a{
 	background-color: #5496bd;
 }
 
+.search-number-item button{
+	color: #a9a9a9;
+}
+
+.search-number-item button:hover{
+	color: #000000;
+}
+
+.search-number-item button:active,
+.search-number-item button:focus{
+	color: #81b3d2;
+}
+
 
 
 
