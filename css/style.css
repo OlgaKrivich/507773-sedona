@@ -34,7 +34,6 @@ a{
 }
 
 .main-page{
-
 	background-color: #2b576b;
 	background-image: url("../img/bgover1.png"), url("../img/background1.jpg");
 	background-position: bottom, 0 -56px;
@@ -100,19 +99,22 @@ a{
 	background-color: #eeeeee;
 }
 
-.reason-item-accomodation::before{
-	content: "";
-	background-image: url("../img/svg/icon-1.svg");
+.reason-item-accomodation{
+	background-image: url("../img/svg/icon1.svg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.reason-item-food::before{
-	content: "";
+.reason-item-food{
 	background-image: url("../img/svg/icon-3.svg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
-.reason-item-souvenir::before{
-	content: "";
-	background-image: url("../img/svg/icon-2.svg");
+.reason-item-souvenir{
+	background-image: url("../img/svg/icon2.svg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .search-title{
@@ -174,7 +176,7 @@ a{
 }
 
 .search-date-calendar{
-	background-image: url("..img/svg/calendar.svg");
+	background-image: url("../img/svg/calendar.svg");
 }
 
 .search-button{
