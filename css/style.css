@@ -25,7 +25,8 @@ a{
 
 .site-navigation,
 .reason-item-examples,
-.reasons-list{
+.reasons-list,
+.footer-button{
 	list-style: none;
 }
 
@@ -205,6 +206,45 @@ a{
 	color: #81b3d2;
 }
 
+.social-button{
+	background-color: #81b3d2;
+}
+
+.social-button:hover{
+	background-color: #669ec0;
+}
+
+.social-button:active,
+.social-button:focus{
+	background-color: #5496bd;
+}
+
+.main-footer img{
+	width: 115px;
+	height: 41px;
+	color: #3c3839;
+}
+
+.main-footer img:hover{
+	color: #81b3d2;
+}
+
+.main-footer img:active,
+.main-footer img:focus{
+	color: #d0cfcf;
+}
+
+.main-footer b{
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.main-footer span{
+	font-weight: regular;
+	font-size: 14px;
+	line-height: 26px;
+}
 
 
 
