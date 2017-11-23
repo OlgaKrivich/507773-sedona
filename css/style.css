@@ -12,6 +12,11 @@ body{
 	background-color: #ffffff;
 }
 
+.inner-page{
+	background-color: #f2f2f2;
+	color: #6d6d6d;
+}
+
 a{
 	text-decoration: none;
 }
@@ -34,6 +39,140 @@ a{
 	color:#000000;
 }
 
+.site-navigation-current{
+	color: #444444;
+}
+
+.site-navigation-current:hover{
+	color: #81b3d2;
+}
+
+.site-navigation-current:focus{
+	color: #b2b2b2;
+}
+.site-navigation-current:active{
+	color: #766357;
+}
+
+.criterias{
+	background-color: #3f769f;
+	background-image: url(../img/background2-hotels.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 217px;
+}
+
+.criterias fieldset{
+	border: none;
+}
+
+.criterias ul{
+	list-style: none;
+	line-height: 21px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.criterias legend{
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.filter-input-checkbox+label{
+	opacity: 0.14;
+}
+
+.filter-button{
+	width: 139px;
+	height: 38px;
+	font: inherit;
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	border: 2px solid #f8f7f6;
+}
+
+.hotels b{
+	font-size: 21px;
+	color: #000000;
+	line-height: 26px;
+	font-weight: bold;
+}
+
+.sorting-list{
+	list-style: none;
+	font-size: 12px;
+	line-height: 18px;
+	color: #111111;
+}
+
+.sorting-list:first-child:active{
+	color: #b3d1e4;
+}
+
+.sorting-list{
+	opacity: 0.3;
+}
+
+.sorting-list:not(:first-child){
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.pagination-list,
+.hotels-list{
+	list-style: none;
+}
+
+.hotels-list h3{
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+}
+
+.hotels-list h3:hover{
+	color: #503e33;
+}
+
+.hotels-list h3:focus,
+.hotels-list h3:active{
+	color: #cacaca;
+}
+
+.hotels-list a{
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+}
+
+.moreinfo{
+	background-color: #81b3d2;
+}
+
+.moreinfo:hover{
+	background-color: #669ec0;
+}
+
+.moreinfo:active,
+.moreinfo:focus{
+	background-color: #5496bd;
+	opacity: 0.3;
+}
+
+.booking{
+	background-color: #766357;
+}
+
+.booking:hover{
+	background-color: #604e43;
+}
+
+.booking:active,
+.booking:focus{
+	background-color: #503e33;
+	opacity: 0.3;
+}
 .main-page{
 	background-color: #2b576b;
 	background-image: url("../img/bgover1.png"), url("../img/background1.jpg");
@@ -219,6 +358,24 @@ a{
 	background-color: #5496bd;
 }
 
+.social-twitter{
+	background-image: : url(../img/svg/twitter.svg);
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.social-facebook{
+	background-image: url(../img/svg/fb-icon.svg);
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
+.social-youtube{
+	background-image: url(../img/svg/youtube.svg);
+	background-repeat: no-repeat;
+	opacity: 0.3;
+}
+
 .main-footer img{
 	width: 115px;
 	height: 41px;
@@ -245,6 +402,26 @@ a{
 	font-size: 14px;
 	line-height: 26px;
 }
+<!--сетки-->
+body{
+	min-width: 768px;
+	max-width: 1200px;
+	min-height: 2762px;
+	margin: 0 auto;
+}
+
+.main-header{
+	min-height: 58px;
+}
+
+.main-navigation{
+	min-height: 58px;
+	display: flex;
+	width: 100%;	
+	flex-direction: row;
+	align-items: flex-start;
+}
+
 
 
 
