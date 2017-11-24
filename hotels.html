@@ -27,6 +27,7 @@
 			<h2 class="visually-hidden">Выбери критерии</h2>
 			
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+			<div class="infostructure-cover">
 				<fieldset>
 					<legend>Инфраструктура</legend>
 					<ul>
@@ -42,9 +43,9 @@
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-wifi">
 							<label for="filter-wifi">Wi-Fi</label>
 						</li>
-					</ul>
-					
+					</ul>	
 				</fieldset>
+			
 				<fieldset>
 					<legend>Тип жилья</legend>
 					<ul>
@@ -62,9 +63,12 @@
 						</li>
 					</ul>
 				</fieldset>
-				<!--Ползунок-->
-				<p class="fiter-price">Стоимость в кутки</p>
-				<button class="filter-button" type="submit">Показать</button>
+					<div class="price">
+					<!--Ползунок-->
+					<p class="fiter-price">Стоимость в кутки</p>
+					<button class="filter-button" type="submit">Показать</button>
+					</div>
+				</div>
 			</form>
 			
 		</section>
@@ -89,13 +93,17 @@
 					<p class="hotel1-item-image">
 							<img src="img/hotel1.jpg" alt="Гостиница1" width="135" height="90">
 					</p>
-					<h3>AMARA RESORT  & SPA</h3>
-					<p class="hotel-type">Гостиница</p>
-					<p class="hotel-price">от 4000 P.</p>
-					<a href="amarahotel.html" class="moreinfo">Подробнее</a>
-					<a href="booking.html" class="booking">Забронировать</a>
-					<p class="rate">рейтинг:8,5</p>
-					<span class="stars"></span>
+					<div>
+						<h3>AMARA RESORT  & SPA</h3>
+						<span>Гостиница</span>
+						<span>от 4000 P.</span><br>
+						<a href="amarahotel.html" class="moreinfo">Подробнее</a>
+						<a href="booking.html" class="booking">Забронировать</a>
+					</div>
+					<div>
+						<p class="rate">рейтинг:8,5</p>
+						<span class="stars"></span>
+					</div>
 				</li>
 
 				<li class="hotel2-item">
@@ -133,8 +141,10 @@
 				<li><a class="social-button" href="#">Facebook</a></li>
 				<li><a class="social-button" href="#">Youtube</a></li>
 			</ul>
-			<span>WEBSITE BY</span>
-			<a href="htmlacademy.ru"><img src="img/svg-sedona/logo-htmlacademy.svg" alt="Логотип академии" width="40" height="10"></a>
+			<div class="footer-academy">
+				<span>WEBSITE BY</span>
+				<a href="htmlacademy.ru"><img src="img/svg/logo-htmlacademy.svg" alt="Логотип академии" width="40" height="10"></a>
+			</div>
 		</footer>
 </body>
 </html>

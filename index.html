@@ -23,18 +23,23 @@
 		</header>
 
 		<main class="main-page">
-			<h1 class="visually-hidden">Седона</h1>
-			<img src="img/Welcome.png" alt="Welcome to Sedona">
+			<section class="main-welcome">
+				<h1 class="visually-hidden">Седона</h1>
+				<img src="img/Welcome.png" alt="Welcome to Sedona">
+				<p class="city-description">Седона - небольшой городок в аризоне, заслуживающий большего!</p>
+				<p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+			</section>
+
 			<section class="reasons">
 				<h2 class="visually-hidden">Причины</h2>
-				<p class="reasons-city">Седона - небольшой городок в аризоне, заслуживающий большего!</p>
-				<p class="reason-item-grey">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
 				<ul class="reasons-list">
 					<li class="reason-item">
-						<b>Настоящий городок</b>
-						<span class="number">№1</span>
-						<p class="reason-item-white">Седона - не атракцион для туристов, там течет своя жизнь</p>
-						<img src="img/reasons-photo1.jpg" alt="Фото причина 1" width="800" height="257">
+						<div class="reason-item-cover">
+							<b>Настоящий городок</b>
+							<span class="number">№1</span>
+							<p class="reason-item-white">Седона - не атракцион для туристов, там течет своя жизнь</p>
+						</div>
+						<img src="img/reasons-photo1.jpg" alt="Фото причина 1" width="800" height="254">
 
 						<ul class="reason-item-examples">
 							<li class="reason-item-accomodation">
@@ -52,14 +57,17 @@
 						</ul>
 					</li>
 					<li class="reason-item">
-						<b>Там есть мост дьявола</b>
-						<span class="number">№2</span>
-						<p class="reason-item-white">Да, по нему нужно пройти! Если конечно вы осмелитесь</p>
-						<img src="img/reasons-photo2.jpg" alt="Фото причина 2" width="800" height="257">
+						<img src="img/reasons-photo2.jpg" alt="Фото причина 2" width="800" height="254">
+						<div class="reason-item-cover">
+							<b>Там есть мост дьявола</b>
+							<span class="number">№2</span>
+							<p class="reason-item-white">Да, по нему нужно пройти! Если конечно вы осмелитесь</p>
+						</div>
+						
 					</li>
 					<li class="reason-item">
 						<b>Небольшая площадь</b>
-						<span class="number">№3</span>
+						<span class="number"> - №3 -</span>
 						<p class="reason-item-grey">Все достопримечательности находятся очень близко</p>
 					</li>
 					<li class="reason-item">
@@ -74,13 +82,16 @@
 					</li>
 				</ul>
 			</section>
+
+			<section class="main-interests">
+				<h2 class="interests-title">Заинтересовались?</h2>
+				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			</section>
 		</main>
 
 		<section class="search">
-			<h2 class="search-title">Заинтересовались?</h2>
-			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+			
 			<a class="button hotel-search">Поиск гостиниц в Седоне</a>
-			<!--Здесь будет форма -->
 			<form class="search" action="https://echo.htmlacademy.ru" method="post">
 				<p class="search-date-item">
 					<label for="arrival-date">Дата заезда</label>
@@ -113,7 +124,7 @@
 		<section class="map">
 			<h2 class="visually-hidden">Как добраться до нас</h2>
 			<p>
-   			<img src="img/map.jpg" width="1200" height="475" alt="Седона">
+   			<img src="img/map.jpg" width="1200" height="477px" alt="Седона">
    		</p>
    		<button class="map-close" type="button">Закрыть</button>	
 		</section>
@@ -125,8 +136,10 @@
 				<li><a class="social-button social-facebook" href="#">Facebook</a></li>
 				<li><a class="social-button social-youtube" href="#">Youtube</a></li>
 			</ul>
-			<span>WEBSITE BY</span>
-			<a href="htmlacademy.ru"><img src="img/svg/logo-htmlacademy.svg" alt="Логотип академии" width="40" height="10"></a>
+			<div class="footer-academy">
+				<span>WEBSITE BY</span>
+				<a href="htmlacademy.ru"><img src="img/svg/logo-htmlacademy.svg" alt="Логотип академии" width="40" height="10"></a>
+			</div>
 		</footer>
 
     
