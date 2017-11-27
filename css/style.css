@@ -1,8 +1,8 @@
 
+
 body{
 	padding: 0;
 	margin:0;
-
 	font-family: "PT Sans", "Arial" sans-serif;
 	font-size: 14px;
 	line-height: 21px;
@@ -10,6 +10,10 @@ body{
 	color:#333333;
 	text-transform: uppercase;
 	background-color: #ffffff;
+}
+
+.whole-page{
+	box-shadow: 15px 5px 0 rgba(0,1,1,0.2);
 }
 
 .inner-page{
@@ -28,7 +32,6 @@ a{
 .hotels{
 	width: 1200px;
 	background-color: #ffffff;
-	box-shadow: 0 4px 4px #f5f6f7;
 	margin: 0 auto;
 	padding:0;
 }

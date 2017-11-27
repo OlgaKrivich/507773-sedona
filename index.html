@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
+  	<div class="whole-page">
 		<header class="main-header">
 			<nav class="main-navigation">
 				<a class="main-header-logo">
@@ -87,47 +88,47 @@
 				<h2 class="interests-title">Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 			</section>
+
+			<section class="search">
+			
+				<button class="button hotel-search">Поиск гостиниц в Седоне</button>
+				<form class="search" action="https://echo.htmlacademy.ru" method="post">
+					<p class="search-date-item">
+						<label for="arrival-date">Дата заезда</label>
+						<input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
+						<button class="search-date-calendar"></button>
+					</p>
+					<p class="search-date-item">
+						<label for="departure-date">Дата выезда</label>
+						<input id="departure-date" type="text" name="date" placeholder="4 июля 2017">
+						<button type="button" class="search-date-calendar"></button>
+					</p>
+					<p class="search-number-item">
+						<label for="adults">Взрослые</label>
+						<button type="button"><span class="visually-hidden">Минус</span>-</button>
+						<input id="adults" type="number" name="number" step="1" placeholder="2">
+						<button type="button"><span class="visually-hidden">Плюс</span>+</button>
+					</p>
+					<p class="search-number-item">
+						<label for="children">Дети</label>
+						<button type="button"><span class="visually-hidden">Минус</span>-</button>
+						<input id="children" type="number" name="number" step="1" placeholder="0">
+						<button type="button"><span class="visually-hidden">Плюс</span>+</button>	
+					</p>
+					<button class="button search-button" type="submit">Найти</button>
+				</form>
+				<button class="search-close" type="button">Закрыть</button>
+			</section>
+
+			<section class="map">
+				<h2 class="visually-hidden">Как добраться до нас</h2>
+				<p>
+   					<img src="img/map.jpg" width="1200" height="477px" alt="Седона">
+   				</p>
+   				<button class="map-close" type="button">Закрыть</button>	
+			</section>
 		</main>
 
-		<section class="search">
-			
-			<a class="button hotel-search">Поиск гостиниц в Седоне</a>
-			<form class="search" action="https://echo.htmlacademy.ru" method="post">
-				<p class="search-date-item">
-					<label for="arrival-date">Дата заезда</label>
-					<input id="arrival-date" type="text" name="date" placeholder="24 апреля 2017">
-					<button class="search-date-calendar"></button>
-				</p>
-				<p class="search-date-item">
-					<label for="departure-date">Дата выезда</label>
-					<input id="departure-date" type="text" name="date" placeholder="4 июля 2017">
-					<button type="button" class="search-date-calendar"></button>
-				</p>
-				<p class="search-number-item">
-					<label for="adults">Взрослые</label>
-					<button type="button"><span class="visually-hidden">Минус</span>-</button>
-					<input id="adults" type="number" name="number" step="1" placeholder="2">
-					<button type="button"><span class="visually-hidden">Плюс</span>+</button>
-				</p>
-				<p class="search-number-item">
-					<label for="children">Дети</label>
-					<button type="button"><span class="visually-hidden">Минус</span>-</button>
-					<input id="children" type="number" name="number" step="1" placeholder="0">
-					<button type="button"><span class="visually-hidden">Плюс</span>+</button>	
-				</p>
-				<button class="button search-button" type="submit">Найти</button>
-			</form>
-			<button class="search-close" type="button">Закрыть</button>
-		</section>
-
-
-		<section class="map">
-			<h2 class="visually-hidden">Как добраться до нас</h2>
-			<p>
-   			<img src="img/map.jpg" width="1200" height="477px" alt="Седона">
-   		</p>
-   		<button class="map-close" type="button">Закрыть</button>	
-		</section>
 
 		<footer class="main-footer">
 			<b>#VISIYSEDONA</b>
@@ -141,7 +142,7 @@
 				<a href="htmlacademy.ru"><img src="img/svg/logo-htmlacademy.svg" alt="Логотип академии" width="40" height="10"></a>
 			</div>
 		</footer>
-
+	</div>
     
   </body>
 </html>
