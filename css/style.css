@@ -1,7 +1,6 @@
 
 body{
 	width: 1200px;
-	min-height: 2762px;
 	margin: 0 auto;
 	padding: 0;
 
@@ -41,7 +40,7 @@ input[type="radio"].visually-hidden{
 }
 
 .whole-page{
-	box-shadow: 5px 5px 0 rgba(0,1,1,0.2);
+	box-shadow: 0 0 15px 5px rgba(0,1,1,0.2);
 }
 
 .inner-page{
@@ -125,11 +124,7 @@ input[type="radio"].visually-hidden{
 }
 
 .main-welcome{
-
 	width: 100%;
-
-	/*height: 722px;*/
-
 }
 
 .welcome-img{
@@ -249,7 +244,6 @@ input[type="radio"].visually-hidden{
 	color: #333333;
 	background-color: #ffffff;
 }
-
 
 .reason-item-accomodation{
 	background-image: url("../img/svg/icon1.svg");
@@ -428,9 +422,7 @@ input[type="radio"].visually-hidden{
 
 
 /*страница hotels*//
-.hotels{
-	/*padding: 0 7x;*/
-}
+
 
 .hotels-found-sorting{
 	margin-left: 20px;
@@ -443,18 +435,24 @@ input[type="radio"].visually-hidden{
 	margin: 0;
 	padding: 0;
 	display: flex;
-	width: 100%;
 	
+	padding-left: 73px;
+	padding-right: 73px;
 	border-bottom: 1px solid grey;
 	padding-top: 30px;
 	padding-bottom: 30px;
+
 }
+
 .hotel-type{
-	display: flex;	
+	display: flex;
+	margin-top: 12px;	
 }
+
 .hotel-price{
 	margin-left: 40px;
 }
+
 .hotels h3{
 	margin: 0;
 }
@@ -483,43 +481,65 @@ input[type="radio"].visually-hidden{
 }
 
 .hotel-item-price{
-	margin-left: 20px;
+	margin-left: 30px;
 }
 
 .hotel-stars span{
 	display: inline-block;
 	background-image: url(../img/svg/star.svg); 
-	width: 20px;
-	height: 20px;
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	padding-bottom: 41px;
 }
+
 .hotel-button{
 	display: flex;
-	justify-content: space-between;
+	margin-top: 14px;
 }
+
 .moreinfo,
 .booking{
+	font: inherit;
+	font-weight: bold;
+	line-height: 21px;
+	font-size: 14px;
 	display: block;
-	padding:8px;
-
-}	
-
+	padding:4px 16px;
 }
+.booking{
+	margin-left: 8px;
+}
+
+.hotel-rate{
+	background-color: #f2f2f2;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 4px 13px;
+}
+
+.direction-list{
+	margin-left: auto;
+}
+
 .direction-item-back{
+	height: 15px;
+	width: 15px;
 	display: inline-block;
 	background-image: url(../img/svg/icon-up-dir.svg);
 	background-repeat: no-repeat;
-	/*background-position: 0 0;*/
-	height: 15px;
-	width: 15px;
-	
 }
+
 .direction-item-next{
 	display: inline-block;
 	width: 15px;
 	height: 15px;
 	background-image: url(../img/svg/icon-down-dir.svg);
 	background-repeat: no-repeat;
-	/*background-position: 0 0;*/
+	color: #cacaca;
+}
+.direction-item-next:active{
+	background-color: #81b3d2;
 }
 
 
@@ -590,8 +610,6 @@ input[type="radio"].visually-hidden{
 .sorting-list{
 	opacity: 0.3;
 }
-
-
 
 .direction-list,
 .hotels-list{
