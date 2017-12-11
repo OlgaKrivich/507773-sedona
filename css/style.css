@@ -79,6 +79,7 @@ input[type="radio"].visually-hidden{
 	margin: 0;
 	padding: 0;
 	font-size: 14px;
+	font-weight: bold;
 	line-height: 26px;
 	color:#000000;
 	background-color: #ffffff;
@@ -94,6 +95,13 @@ input[type="radio"].visually-hidden{
 
 .site-navigation a{
 	color:#000000;
+}
+
+.site-navigation li:first-child{
+	margin-left: 45px;
+}
+.site-navigation li:last-child{
+	margin-right: 45px;
 }
 
 .site-navigation-current{
@@ -168,6 +176,8 @@ input[type="radio"].visually-hidden{
 }
 
 .reasons-list{
+	margin: 0;
+	padding:0;
 	display: flex;
 	flex-wrap: wrap;
 	width: 100%;
@@ -215,7 +225,10 @@ input[type="radio"].visually-hidden{
 }
 
 .reason-item-examples{
+	margin:0;
+	padding:0;
 	display: flex;
+	flex-wrap: wrap;
 	width: 100%;
 	height: 290px;
 	justify-content: space-between;
@@ -241,11 +254,16 @@ input[type="radio"].visually-hidden{
 }
 
 .reason-item-examples{
+	position: relative;
 	color: #333333;
 	background-color: #ffffff;
 }
 
 .reason-item-accomodation{
+	width: 403px;
+	position: absolute;
+	top: 59px;
+	left: 165px;
 	background-image: url("../img/svg/icon1.svg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -362,56 +380,13 @@ input[type="radio"].visually-hidden{
 	justify-content: space-between;
 }
 
-.social-button{
-	background-color: #81b3d2;
-}
-
-.social-button:hover{
-	background-color: #669ec0;
-}
-
-.social-button:active,
-.social-button:focus{
-	background-color: #5496bd;
-}
-
-.social-twitter{
-	background-image: : url(../img/svg/twitter.svg);
-	background-repeat: no-repeat;
-	opacity: 0.3;
-}
-
-.social-facebook{
-	background-image: url(../img/svg/fb-icon.svg);
-	background-repeat: no-repeat;
-	opacity: 0.3;
-}
-
-.social-youtube{
-	background-image: url(../img/svg/youtube.svg);
-	background-repeat: no-repeat;
-	opacity: 0.3;
-}
-
-.main-footer img{
-	width: 115px;
-	height: 41px;
-	color: #3c3839;
-}
-
-.main-footer img:hover{
-	color: #81b3d2;
-}
-
-.main-footer img:active,
-.main-footer img:focus{
-	color: #d0cfcf;
-}
-
 .main-footer b{
+	display: block;
 	font-weight: bold;
 	font-size: 21px;
 	line-height: 26px;
+	margin-left: 130px;
+	margin-top: 52px;
 }
 
 .main-footer span{
@@ -419,7 +394,57 @@ input[type="radio"].visually-hidden{
 	font-size: 14px;
 	line-height: 26px;
 }
+.footer-academy{
+	margin-right: 95px;
+	margin-top: 34px;
+}
 
+.social-button{
+	display: flex;
+	width: 46px;
+	height: 46px;
+	background-color: #81b3d2;
+	align-items: center;
+	justify-content: center;
+}
+.main-footer-list{
+	margin: 0 auto;
+	padding: 0;
+	padding-top: 46px;
+	list-style: none;
+	display: flex;
+	width: 150px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.social-button:hover{
+	background-color: #669ec0;
+}
+
+.social-button:active{
+	background-color: #5496bd;
+}
+
+.social-button:active path{
+	opacity: 0.3;
+}
+.footer-logo{
+	margin-top: 41px;
+}
+.footer-logo:hover path{
+	fill: #81b3d2;
+}
+
+.footer-logo:active path{
+	fill: #bdbbbc;
+}
+
+.footer-academy span{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 5px;
+}
 
 /*страница hotels*//
 
