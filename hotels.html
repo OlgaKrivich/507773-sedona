@@ -29,45 +29,61 @@
 			
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 			<div class="infostructure-cover">
-				<fieldset>
-					<legend>Инфраструктура</legend>
-					<ul>
-						<li class="filter-option">
+				<fieldset class="filter-infostructure">
+					<legend>Инфраструктура:</legend>
+					<ul class="fliter-option-list">
+						<li class="filter-option checked">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
 							<label for="filter-pool">Бассейн</label>
 						</li>
-						<li class="filter-option">
+						<li class="filter-option unchecked">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-parking">
 							<label for="filter-parking">Парковка</label>
 						</li>
-						<li class="filter-option">
+						<li class="filter-option unchecked">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="pool" id="filter-wifi">
 							<label for="filter-wifi">Wi-Fi</label>
 						</li>
 					</ul>	
 				</fieldset>
 			
-				<fieldset>
-					<legend>Тип жилья</legend>
-					<ul>
-						<li class="filter-option">
+				<fieldset class="filter-accomodation">
+					<legend>Тип жилья:</legend>
+					<ul class="fliter-option-list">
+						<li class="filter-option checked">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
 							<label for="filter-hotel">гостиница</label>
 						</li>
-						<li class="filter-option">
+						<li class="filter-option checked">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
 							<label for="filter-motel">Мотель</label>
 						</li>
-						<li class="filter-option">
+						<li class="filter-option checked">
 							<input class="visually-hidden filter-input-checkbox" type="checkbox" name="apartment" id="filter-apartment" checked>
 							<label for="filter-apartment">Апартаменты</label>
 						</li>
 					</ul>
 				</fieldset>
-					<div class="price">
-					<!--Ползунок-->
-					<p class="fiter-price">Стоимость в кутки</p>
-					<button class="filter-button" type="submit">Показать</button>
+				<!--Ползунок-->
+					<div class="filter-range">
+						<div class="filter-range-title">Стоимость в сутки(р):</div>
+						<div class="price-controls">
+							 <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        					<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+         						<div class="bar"></div>
+       						 </div>
+       						 <div class="range-toggle range-toggle-min"></div>
+      						  <div class="range-toggle range-toggle-max"></div>
+						</div>
+						<div> 
+							<button class="btn-transparent" type="submit">Показать</button>
+							
+						</div>
+					
+					
 					</div>
 				</div>
 			</form>
@@ -107,8 +123,8 @@
 							<span class="hotel-price">от 4000 P.</span>
 						</div>
 						<div class="hotel-button">
-							<a href="amarahotel.html" class="button moreinfo">Подробнее</a>
-							<a href="booking.html" class="button booking">Забронировать</a>
+							<a href="amarahotel.html" class="moreinfo">Подробнее</a>
+							<a href="booking.html" class="booking">Забронировать</a>
 						</div>
 					</div>
 					<div class="hotel-item-rate">
